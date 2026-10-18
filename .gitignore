@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+
+# Scratch & Raw Archives (>130 MB raw source assets)
+archive/
+.playwright-mcp/
+
+# Local Temporary Screenshots
+screenshot_*.png
+
+# Logs & Environment
+*.log
+.env
+.env.local
+
+# OS Metadata
+.DS_Store
+Thumbs.db

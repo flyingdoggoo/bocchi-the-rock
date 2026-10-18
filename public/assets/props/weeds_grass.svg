@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="grassGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="70%" stop-color="#52b788"/>
+      <stop offset="100%" stop-color="#95d5b2"/>
+    </linearGradient>
+  </defs>
+  <!-- Cluster of wild weeds/grass blades Ryo snacks on -->
+  <path d="M 50,90 Q 30,50 20,20 Q 32,45 50,90 Z" fill="url(#grassGrad)"/>
+  <path d="M 50,90 Q 42,40 38,10 Q 52,40 50,90 Z" fill="url(#grassGrad)"/>
+  <path d="M 50,90 Q 60,40 68,14 Q 60,50 50,90 Z" fill="url(#grassGrad)"/>
+  <path d="M 50,90 Q 75,50 85,25 Q 70,55 50,90 Z" fill="url(#grassGrad)"/>
+  <path d="M 50,90 Q 52,60 55,30 Q 58,60 50,90 Z" fill="#74c69d"/>
+  <!-- Zero yen label badge -->
+  <rect x="22" y="75" width="56" height="18" rx="4" fill="#1b4332" stroke="#52b788" stroke-width="1.5"/>
+  <text x="50" y="88" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="#d8f3dc" text-anchor="middle">¥0 草うまい</text>
+</svg>

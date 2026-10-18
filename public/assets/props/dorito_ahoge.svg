@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="doritoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Glowing Dorito Ahoge -->
+  <polygon points="50,15 88,85 12,85" fill="#ffd13b" stroke="#e5b217" stroke-width="3" filter="url(#doritoGlow)" />
+  <polygon points="50,25 78,80 22,80" fill="#ffe270" opacity="0.6" />
+  <!-- Seasoning specks -->
+  <circle cx="48" cy="45" r="2.5" fill="#e07a16" />
+  <circle cx="62" cy="65" r="2" fill="#e07a16" />
+  <circle cx="36" cy="68" r="2" fill="#e07a16" />
+  <circle cx="50" cy="74" r="1.8" fill="#e07a16" />
+</svg>

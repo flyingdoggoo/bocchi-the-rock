@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="100" height="80">
+  <defs>
+    <filter id="cubeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Blue Isometric Cube -->
+  <g transform="translate(15, 15)">
+    <!-- Top Face -->
+    <polygon points="25,5 45,15 25,25 5,15" fill="#67b2ff" filter="url(#cubeGlow)"/>
+    <!-- Left Face -->
+    <polygon points="5,15 25,25 25,50 5,40" fill="#2979ff"/>
+    <!-- Right Face -->
+    <polygon points="45,15 25,25 25,50 45,40" fill="#1565c0"/>
+    <!-- Gloss reflection -->
+    <line x1="25" y1="5" x2="25" y2="25" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+  </g>
+  <!-- Yellow Isometric Cube -->
+  <g transform="translate(42, 22)">
+    <!-- Top Face -->
+    <polygon points="25,5 45,15 25,25 5,15" fill="#ffe066" filter="url(#cubeGlow)"/>
+    <!-- Left Face -->
+    <polygon points="5,15 25,25 25,50 5,40" fill="#ffd13b"/>
+    <!-- Right Face -->
+    <polygon points="45,15 25,25 25,50 45,40" fill="#f5b300"/>
+    <!-- Gloss reflection -->
+    <line x1="25" y1="5" x2="25" y2="25" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+  </g>
+  <!-- Star sparkle -->
+  <path d="M 75,10 Q 75,18 83,18 Q 75,18 75,26 Q 75,18 67,18 Q 75,18 75,10 Z" fill="#ffffff" filter="url(#cubeGlow)"/>
+</svg>

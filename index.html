@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOCCHI THE ROCK! // KESSOKU BAND — Cinematic Haute Editorial</title>
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./src/styles/tokens.css" />
+  <link rel="stylesheet" href="./src/styles/animations.css" />
+  <link rel="stylesheet" href="./src/styles/main.css" />
+
+  <!-- Critical High-Priority Asset Preloads -->
+  <link rel="preload" as="image" href="./assets/2k/hero_bocchi_guitarhero_4k.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="./assets/common/logo.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="./assets/sequence/frame_000.webp" type="image/webp" />
+</head>
+<body>
+  <!-- Background Music Audio Element with Native Streaming & Autoplay -->
+  <audio id="bgmAudio" src="./assets/audio/kessoku_band_theme.mp3" loop preload="auto" playsinline></audio>
+
+  <!-- Analog Film Grain Noise Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive Mouse Move Chromatic Aura Spotlight (Universal Page-Wide Glow) -->
+  <div class="cursor-chromatic-aura" id="cursorAura" aria-hidden="true"></div>
+
+  <!-- Artistic Indie-Rock Zine Background Collage Layer -->
+  <div class="artistic-bg-layer" aria-hidden="true">
+    <div class="bg-halftone-pattern"></div>
+    <div class="bg-ghost-typography bg-ghost-1">結束バンド</div>
+    <div class="bg-ghost-typography bg-ghost-2">GUITARHERO</div>
+    <div class="bg-ghost-typography bg-ghost-3">下北沢 STARRY</div>
+    <div class="bg-ghost-typography bg-ghost-4">BOCCHI THE ROCK!</div>
+    <div class="bg-guitar-tab-stream">
+      <div class="tab-line">E |---------------------------------12-15-17v---|</div>
+      <div class="tab-line">B |-----------------------12-15------------------|</div>
+      <div class="tab-line">G |-------------12-14b16-------------------------|</div>
+      <div class="tab-line">D |-------12-14----------------------------------|</div>
+      <div class="tab-line">A |-12-14----------------------------------------|</div>
+    </div>
+    <div class="bg-vinyl-grooves bg-vinyl-left"></div>
+    <div class="bg-vinyl-grooves bg-vinyl-right"></div>
+    <div class="bg-stage-mote mote-1"></div>
+    <div class="bg-stage-mote mote-2"></div>
+    <div class="bg-stage-mote mote-3"></div>
+    <div class="bg-stage-mote mote-4"></div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-nav">
+    <div class="nav-brand">
+      <img src="./assets/common/logo.svg" alt="Bocchi the Rock! Logo" class="nav-logo-svg" />
+      <span class="nav-live-badge">
+        <span class="live-dot"></span>
+        <span class="live-text">STARRY LIVE // SHIMOKITAZAWA</span>
+      </span>
+    </div>
+
+    <div class="nav-actions">
+      <!-- Tape Audio Toggle Button -->
+      <button class="nav-audio-toggle interactive-btn is-playing" id="navAudioToggle" aria-label="Toggle STARRY Audio">
+        <span class="audio-label">STARRY: ON</span>
+        <div class="equalizer-wrap" aria-hidden="true">
+          <div class="audio-bar playing"></div>
+          <div class="audio-bar playing"></div>
+          <div class="audio-bar playing"></div>
+          <div class="audio-bar playing"></div>
+          <div class="audio-bar playing"></div>
+          <div class="audio-bar playing"></div>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- STAGE 01: HERO OVERTURE (EDITORIAL INDIE-ROCK ARCHIVE) -->
+  <section class="hero-section" id="hero">
+    <div class="hero-ambient-cone" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge-row">
+          <span class="zine-tag zine-tag-pink">LIVE AT STARRY</span>
+          <span class="zine-tag">SHIMOKITAZAWA // 下北沢</span>
+          <span class="zine-tag zine-tag-accent">BPM 195 · E MINOR</span>
+        </div>
+
+        <h1 class="hero-title">
+          BOCCHI <br />
+          <span class="highlight-pink">THE ROCK!</span>
+        </h1>
+
+        <div class="hero-kanji-quote">
+          <span class="kanji-quote-text">「暗闇のクローゼットから、下北沢STARRYの熱狂へ。」</span>
+        </div>
+
+        <div class="hero-spec-strip">
+          <div class="spec-pill">
+            <span class="spec-label">RIG:</span> GIBSON LES PAUL CUSTOM 1968
+          </div>
+          <div class="spec-pill">
+            <span class="spec-label">STOMP:</span> PROCO RAT 2 // DISTORTION
+          </div>
+          <div class="spec-pill spec-pill-cute">
+            <span class="spec-dot"></span> ぼっちちゃん応援中 ♪
+          </div>
+        </div>
+
+        <div class="hero-cute-seal-row">
+          <div class="cute-reaction-seal">
+            <span class="seal-kaomoji">(⁄ ⁄＞⁄ ▽ ⁄＜⁄ ⁄)</span>
+            <span class="seal-caption">「あっ... 結束バンドです...」</span>
+          </div>
+          <a href="#scrubSequence" class="hero-scroll-cue interactive-btn">
+            <span>SCROLL FOR GUITAR CLIMAX</span>
+            <span class="cue-arrow">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <div class="hero-poster-frame">
+          <div class="duct-tape duct-tape-tl duct-tape-pink"></div>
+          <div class="duct-tape duct-tape-tr"></div>
+          <div class="hero-img-wrap">
+            <img src="./assets/2k/hero_bocchi_guitarhero_4k.webp" alt="Hitori Gotoh - Explosive Guitar Hero Solo" class="hero-char-img" />
+          </div>
+          <div class="hero-polaroid-caption">
+            <span class="caption-primary">HITORI GOTOH // GUITAR HERO OVERDRIVE</span>
+            <span class="caption-secondary">LIVE AT SHIMOKITAZAWA STARRY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE 02: 120 FPS KINETIC ROCK OVERDRIVE SCROLLER -->
+  <section class="scrub-sequence-section" id="scrubSequence">
+    <div class="sticky-viewport">
+      <div class="canvas-wrapper">
+        <canvas id="sequenceCanvas" width="640" height="640"></canvas>
+
+        <!-- Kinetic Manga Rock Sound Effects (Triggered by Scroll Progress) -->
+        <div class="manga-sfx-overlay" id="mangaSfxOverlay" aria-hidden="true">
+          <div class="sfx-blast sfx-1" id="sfx1">ジャカジャカ！</div>
+          <div class="sfx-blast sfx-2" id="sfx2">ドドドドッ！</div>
+          <div class="sfx-blast sfx-3" id="sfx3">ギュイィィン！</div>
+          <div class="sfx-blast sfx-4" id="sfx4">バーーーーーン！</div>
+        </div>
+
+        <!-- Overdrive VU Level Indicator -->
+        <div class="overdrive-hud" id="overdriveHud">
+          <div class="overdrive-meter-wrap">
+            <div class="overdrive-meter-header">
+              <span class="meter-title">⚡ OVERDRIVE CLIMAX</span>
+              <span class="meter-val" id="overdriveVal">0% GAIN</span>
+            </div>
+            <div class="meter-bar-track">
+              <div class="meter-bar-fill" id="overdriveFill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE 03: LIVING CURATORIAL DOSSIERS (KESSOKU BAND ARCHIVES) -->
+  <section class="dossier-section" id="dossiers">
+    <div class="section-curator-header">
+      <span class="section-serial">下北沢 STARRY // BAND PROFILE</span>
+      <h2 class="section-title">KESSOKU BAND ROSTER <span class="cute-header-mascot">🎸</span></h2>
+    </div>
+
+    <!-- Member Tabs -->
+    <div class="member-tabs" role="tablist">
+      <button class="member-tab-btn active" data-member="hitori" style="--active-color: var(--bocchi-pink); --active-glow: var(--bocchi-pink-glow);">
+        <span class="tab-dot" style="color: var(--bocchi-pink);"></span>
+        01 · Hitori Gotoh
+      </button>
+      <button class="member-tab-btn" data-member="nijika" style="--active-color: var(--nijika-yellow); --active-glow: var(--nijika-yellow-glow);">
+        <span class="tab-dot" style="color: var(--nijika-yellow);"></span>
+        02 · Nijika Ijichi
+      </button>
+      <button class="member-tab-btn" data-member="ryo" style="--active-color: var(--ryo-blue); --active-glow: var(--ryo-blue-glow);">
+        <span class="tab-dot" style="color: var(--ryo-blue);"></span>
+        03 · Ryo Yamada
+      </button>
+      <button class="member-tab-btn" data-member="ikuyo" style="--active-color: var(--kita-red); --active-glow: var(--kita-red-glow);">
+        <span class="tab-dot" style="color: var(--kita-red);"></span>
+        04 · Ikuyo Kita
+      </button>
+    </div>
+
+    <!-- Dossier Showcase Card -->
+    <div class="dossier-card" id="dossierCard" style="--active-color: var(--bocchi-pink); --active-glow: var(--bocchi-pink-glow);">
+      <div class="duct-tape duct-tape-tl"></div>
+      
+      <div class="dossier-visual">
+        <!-- Floating Character Props & Accessories Layer -->
+        <div class="dossier-props-layer" id="dossierPropsLayer"></div>
+
+        <img id="dossierCharRender" src="./assets/characters/hitori_main.png" alt="Member Portrait" class="dossier-char-render" />
+        
+        <div class="dossier-live-polaroid" id="dossierLivePolaroid">
+          <div class="duct-tape duct-tape-tr duct-tape-pink"></div>
+          <img id="dossierLiveStill" src="./assets/gallery/still_ep05_4.jpg" alt="Live Action Episode Still" class="dossier-still-img" />
+          <div class="polaroid-stamp">
+            <span class="live-dot-mini"></span>
+            <span id="dossierLiveTag">EP.05 // AUDITION GUITAR SOLO</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dossier-info">
+        <div class="dossier-header-row">
+          <span class="dossier-role-tag" id="dossierRole">Lead Guitar // "guitarhero"</span>
+          <div class="dossier-status-badge" id="dossierStatusBadge">
+            <span class="status-icon">⚡</span>
+            <span class="status-label">SOCIAL BATTERY:</span>
+            <span class="status-val">3% · CRITICAL</span>
+          </div>
+        </div>
+        <h3 class="dossier-name" id="dossierName">Hitori Gotoh</h3>
+        <p class="dossier-quote" id="dossierQuote">
+          "Even if I'm an extreme introvert who hides in a cardboard box... when I hold this guitar, I can connect with the whole world."
+        </p>
+
+        <div class="dossier-meta-grid">
+          <div class="dossier-meta-item">
+            <span class="meta-label">PRIMARY INSTRUMENT</span>
+            <span class="meta-value" id="dossierInstrument">Gibson Les Paul Custom 1968 / PACIFICA 611V</span>
+          </div>
+          <div class="dossier-meta-item">
+            <span class="meta-label">ARCHETYPE</span>
+            <span class="meta-value" id="dossierArchetype">The Bedroom Virtuoso</span>
+          </div>
+          <div class="dossier-meta-item">
+            <span class="meta-label">DATE OF BIRTH</span>
+            <span class="meta-value" id="dossierBirthday">February 21 · Blood Type O</span>
+          </div>
+          <div class="dossier-meta-item">
+            <span class="meta-label">CHARACTERISTIC</span>
+            <span class="meta-value" id="dossierCatchcopy">Conversations always start with "Ah..."</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE 04: THE HALL OF NEUROSES (BOCCHI QUIRKS GALLERY) -->
+  <section class="neuroses-section" id="neuroses">
+    <div class="section-curator-header">
+      <span class="section-serial">BOCCHI THE ROCK! // PSYCHE ARCHIVE</span>
+      <h2 class="section-title">THE HALL OF NEUROSES</h2>
+    </div>
+
+    <div class="neuroses-grid">
+      <!-- Quirk 1: Slime Melt -->
+      <div class="quirk-card">
+        <div class="duct-tape duct-tape-tl duct-tape-pink"></div>
+        <div class="quirk-img-wrap">
+          <img src="./assets/chibi/bocchi_slime.svg" alt="Tsuchinoko Slime Bocchi" class="slime-wobble" />
+        </div>
+        <h3 class="quirk-title">Tsuchinoko Slime Melt</h3>
+        <p class="quirk-desc">
+          When social battery depletes past absolute zero, the biological form dissolves into an amorphous puddle of pastel despair.
+        </p>
+      </div>
+
+      <!-- Quirk 2: Panic Glitch -->
+      <div class="quirk-card" id="glitchCard" data-text="CYBERNETIC VOXEL PANIC">
+        <div class="duct-tape duct-tape-tr"></div>
+        <div class="quirk-img-wrap">
+          <img src="./assets/chibi/bocchi_panic.svg" alt="Panic Screaming Bocchi" />
+        </div>
+        <h3 class="quirk-title">Cybernetic Voxel Panic</h3>
+        <p class="quirk-desc">
+          Sudden eye contact triggers high-frequency frame jitter, polygon decimation, and auditory overdrive. Click to trigger panic!
+        </p>
+      </div>
+
+      <!-- Quirk 3: Mango Box -->
+      <div class="quirk-card">
+        <div class="duct-tape duct-tape-tl"></div>
+        <div class="quirk-img-wrap">
+          <img src="./assets/quirks/mango_box.svg" alt="Ripe Mango Box Sanctuary" class="box-nervous" />
+        </div>
+        <h3 class="quirk-title">Ripe Mango Sanctuary</h3>
+        <p class="quirk-desc">
+          Miyazaki ripe mango corrugated armor ("完熟マンゴー"). Provides 100% emotional defense against extroverts and sunlight.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE 05: GEAR & EQUIPMENT STUDIO -->
+  <section class="gear-section" id="gear">
+    <div class="section-curator-header">
+      <span class="section-serial">AUTHENTIC GEAR // INSTRUMENT LAB</span>
+      <h2 class="section-title">THE STARRY GEAR ATELIER <span class="cute-header-mascot">🎸</span></h2>
+      <p class="section-subtitle">
+        Anatomy of Hitori Gotoh's iconic 1968 Gibson Les Paul Custom ("Black Beauty"), inherited from her father and lovingly decorated with closet charms and ripe mango armor.
+      </p>
+    </div>
+
+    <!-- Cute Bocchi Secret Confession Bubble -->
+    <div class="gear-confession-banner" id="gearConfessionBanner">
+      <div class="confession-avatar-wrap">
+        <span class="confession-avatar-kaomoji" id="gearAvatarKaomoji">(⁄ ⁄＞⁄ ▽ ⁄＜⁄ ⁄)</span>
+        <span class="confession-name">Hitori Gotoh // 後藤ひとり</span>
+      </div>
+      <div class="confession-bubble-content">
+        <div class="confession-quote" id="gearConfessionQuote">
+          「お父さんのギブソン・レスポール・カスタム... 傷つけないように毎日クロスで磨いてます... でも、こっそりマンゴーシール貼っちゃいました...」
+        </div>
+        <div class="confession-trans" id="gearConfessionTrans">
+          "My father's Gibson Les Paul Custom 1968... I polish it with microfiber every day so it never gets scratched... but I secretly put a Ripe Mango sticker on it..."
+        </div>
+      </div>
+    </div>
+
+    <div class="gear-stage-showcase">
+      <!-- Left: Interactive Guitar Canvas Frame with Floating Hotspots -->
+      <div class="gear-visual-center" id="gearVisualBox">
+        <div class="guitar-stage-backdrop">
+          <!-- Spotlight Behind Guitar -->
+          <div class="guitar-spotlight"></div>
+
+          <!-- SVG Instrument -->
+          <div class="guitar-svg-wrap" id="guitarSvgWrap">
+            <img src="./assets/gear/gibson_les_paul.svg?v=1968custom" alt="Gibson Les Paul Custom 1968 - Bocchi Custom Edition" class="gear-guitar-img" id="gearGuitarImg" />
+            
+            <!-- Hotspot 1: Hair Cubes Charm on Headstock -->
+            <button class="gear-hotspot hotspot-headstock" data-target="cubes" title="Hair Cubes Charm">
+              <span class="hotspot-pulse"></span>
+              <span class="hotspot-icon">💛</span>
+            </button>
+
+            <!-- Hotspot 2: GUITARHERO Pink Pick on Pickguard -->
+            <button class="gear-hotspot hotspot-pick" data-target="pick" title="Pink Celluloid Pick">
+              <span class="hotspot-pulse"></span>
+              <span class="hotspot-icon">🎸</span>
+            </button>
+
+            <!-- Hotspot 3: Ripe Mango Sticker on Lower Bout -->
+            <button class="gear-hotspot hotspot-mango" data-target="mango" title="Ripe Mango Sticker">
+              <span class="hotspot-pulse"></span>
+              <span class="hotspot-icon">🥭</span>
+            </button>
+
+            <!-- Hotspot 4: Bridge & Humbuckers Gold Hardware -->
+            <button class="gear-hotspot hotspot-hardware" data-target="father" title="1968 Gold Hardware">
+              <span class="hotspot-pulse"></span>
+              <span class="hotspot-icon">✨</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Accessory Trays -->
+        <div class="gear-accessory-tray">
+          <button class="accessory-chip active interactive-btn" data-accessory="father">
+            <span class="chip-emoji">👑</span>
+            <span class="chip-name">1968 Custom</span>
+          </button>
+          <button class="accessory-chip interactive-btn" data-accessory="cubes">
+            <span class="chip-emoji">💛💙</span>
+            <span class="chip-name">Hair Cubes</span>
+          </button>
+          <button class="accessory-chip interactive-btn" data-accessory="pick">
+            <span class="chip-emoji">🎸</span>
+            <span class="chip-name">Hero Pick</span>
+          </button>
+          <button class="accessory-chip interactive-btn" data-accessory="mango">
+            <span class="chip-emoji">🥭</span>
+            <span class="chip-name">Mango Box</span>
+          </button>
+          <button class="accessory-chip interactive-btn" data-accessory="amp">
+            <span class="chip-emoji">⚡</span>
+            <span class="chip-name">JCM900 Crunch</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Curatorial Technical Specs with Dynamic Attributes -->
+      <div class="gear-specs-list">
+        <div class="gear-spec-entry active-spec" id="specCard">
+          <div class="spec-header-row">
+            <span class="spec-category-tag" id="specTag">PRIMARY WEAPON · INHERITED</span>
+            <span class="spec-vintage-badge" id="specBadge">1968 REISSUE</span>
+          </div>
+          <h4 id="specTitle">GIBSON LES PAUL CUSTOM ("BLACK BEAUTY")</h4>
+          <p id="specDesc">
+            Inherited from her father's youth. Deep carved maple top on solid mahogany back with mother-of-pearl split-diamond headstock inlay, multi-ply cream purfling, and aged gold hardware. Heavy, thunderous sustain that powers Kessoku Band's climactic solos.
+          </p>
+          <div class="spec-attributes-grid" id="specGrid">
+            <div class="spec-attr-item">
+              <span class="attr-label">BODY / TOP</span>
+              <span class="attr-val">Solid Mahogany / Carved Maple</span>
+            </div>
+            <div class="spec-attr-item">
+              <span class="attr-label">FRETBOARD</span>
+              <span class="attr-val">Ebony w/ Pearl Block Inlays</span>
+            </div>
+            <div class="spec-attr-item">
+              <span class="attr-label">PICKUPS</span>
+              <span class="attr-val">Dual 490R / 498T Gold Humbuckers</span>
+            </div>
+            <div class="spec-attr-item">
+              <span class="attr-label">SECRET CHARM</span>
+              <span class="attr-val">完熟マンゴー (Ripe Mango) Decal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Instrument: Pacifica -->
+        <div class="gear-spec-entry gear-spec-compact">
+          <div class="spec-header-row">
+            <span class="spec-category-tag">SECOND GUITAR · SELF-EARNED</span>
+            <span class="spec-vintage-badge">EPISODE 12</span>
+          </div>
+          <h4>YAMAHA PACIFICA 611V FM (CUSTOM TRANSLUCENT BLACK)</h4>
+          <p>
+            Acquired using her own live house part-time earnings after the school cultural festival string-break incident. Seymour Duncan SP90-1n & Custom 5 pickups with Wilkinson tremolo.
+          </p>
+        </div>
+
+        <!-- Amplifier Rig -->
+        <div class="gear-spec-entry gear-spec-compact">
+          <div class="spec-header-row">
+            <span class="spec-category-tag">UNDERGROUND RIG · STARRY VENUE</span>
+            <span class="spec-vintage-badge">HIGH GAIN</span>
+          </div>
+          <h4>MARSHALL JCM900 4100 + PROCO RAT 2 DISTORTION</h4>
+          <p>
+            The signature roar of Live House STARRY. High-gain British crunch pushed into singing sustain by vintage RAT clipping diodes and Boss BD-2 Blues Driver boost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE 05: KESSOKU VISUAL ARCHIVE -->
+  <section class="gallery-section" id="galleryArchive">
+    <div class="section-curator-header">
+      <span class="section-serial">下北沢 STARRY // VISUAL ARCHIVE</span>
+      <h2 class="section-title">STAGE & SQUAD MEMORIES</h2>
+      <p class="section-subtitle">
+        An intimate visual chronicle of Kessoku Band — from the solitude of the bedroom closet to the explosive euphoria of Shimokitazawa STARRY. Click any artwork to expand.
+      </p>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="gallery-filter-bar">
+      <button class="gallery-filter-btn active interactive-btn" data-filter="all">ALL MOMENTS (8)</button>
+      <button class="gallery-filter-btn interactive-btn" data-filter="live">STAGE LIVE</button>
+      <button class="gallery-filter-btn interactive-btn" data-filter="squad">KESSOKU SQUAD</button>
+      <button class="gallery-filter-btn interactive-btn" data-filter="reverie">SOLO REVERIE</button>
+    </div>
+
+    <!-- Zine / Bento Grid -->
+    <div class="gallery-grid">
+      <!-- Card 1: Live Masterpiece (Spans 2 columns) -->
+      <div class="gallery-card gallery-card-featured" data-category="live" data-fullsrc="./assets/2k/kessoku_art_7k.webp">
+        <div class="duct-tape duct-tape-tl duct-tape-pink"></div>
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/kessoku_art_7k.webp" alt="That Band Live at Starry" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">THAT BAND (あのバンド) — LIVE AT STARRY</h3>
+          </div>
+          <p class="gallery-card-desc">The iconic full band live concert illustration featuring Bocchi on lead Gibson Les Paul, Kita on vocals, Ryo on bass, and Nijika on drums.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Closet Solitude -->
+      <div class="gallery-card" data-category="reverie" data-fullsrc="./assets/2k/kessoku_band_6k.webp">
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/kessoku_band_6k.webp" alt="Closet Practice" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">CLOSET SANCTUARY: BIRTH OF GUITARHERO</h3>
+          </div>
+          <p class="gallery-card-desc">Six solitary hours a day under the single overhead lamp with headphones and Les Paul.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Nijika Vending Machine -->
+      <div class="gallery-card" data-category="reverie" data-fullsrc="./assets/2k/bocchi_poster_5k.webp">
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/bocchi_poster_5k.webp" alt="Shimokitazawa Vending Machine" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">SHIMOKITAZAWA NIGHT: NIJIKA IJICHI</h3>
+          </div>
+          <p class="gallery-card-desc">Vending machine amber glow illuminating the band founder on quiet city streets.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Canopy Shade Squad -->
+      <div class="gallery-card" data-category="squad" data-fullsrc="./assets/2k/kessoku_squad_4k.webp">
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/kessoku_squad_4k.webp" alt="Afternoon Canopy" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">AFTERNOON CANOPY SIESTA</h3>
+          </div>
+          <p class="gallery-card-desc">Top-down perspective of all four band members resting under sunlight dappling.</p>
+        </div>
+      </div>
+
+      <!-- Card 5: Karaoke After-Party -->
+      <div class="gallery-card" data-category="squad" data-fullsrc="./assets/2k/bocchi_stage_solo_4k.webp">
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/bocchi_stage_solo_4k.webp" alt="Karaoke After-Party" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">STARRY AFTER-LIVE CELEBRATION DISASTER</h3>
+          </div>
+          <p class="gallery-card-desc">Beer spills, drunk Kikuri clinging to PA-san, and Bocchi singing karaoke with star glasses.</p>
+        </div>
+      </div>
+
+      <!-- Card 6: Streetwear Squad -->
+      <div class="gallery-card" data-category="squad" data-fullsrc="./assets/2k/bocchi_guitar_solo_2k.webp">
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/bocchi_guitar_solo_2k.webp" alt="Streetwear Squad" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">SHIMOKITAZAWA HOODIE & BUCKET HAT SQUAD</h3>
+          </div>
+          <p class="gallery-card-desc">Stylized aesthetic illustration of Kessoku Band in oversized black hoodies and tinted sunglasses.</p>
+        </div>
+      </div>
+
+      <!-- Card 7: Enoshima Shoreline -->
+      <div class="gallery-card" data-category="reverie" data-fullsrc="./assets/2k/bocchi_shred_guitar_2k.webp">
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/bocchi_shred_guitar_2k.webp" alt="Enoshima Shoreline" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">ENOSHIMA SHORELINE: DRIFTWOOD MELODY</h3>
+          </div>
+          <p class="gallery-card-desc">Episode 9 coastal retreat. Tracing thoughts into wet sand against crashing waves.</p>
+        </div>
+      </div>
+
+      <!-- Card 8: Winter Subaru WRX Ryo -->
+      <div class="gallery-card" data-category="reverie" data-fullsrc="./assets/2k/bocchi_overdrive_4k.webp">
+        <div class="gallery-img-wrap">
+          <img src="./assets/2k/bocchi_overdrive_4k.webp" alt="Winter Subaru Ryo" class="gallery-img" decoding="async" />
+        </div>
+        <div class="gallery-card-meta">
+          <div class="gallery-card-header">
+            <h3 class="gallery-card-title">WINTER OVERDRIVE: RYO YAMADA & SUBARU WRX</h3>
+          </div>
+          <p class="gallery-card-desc">Ryo standing with her bass guitar bag beside a snow-covered World Rally Blue Subaru WRX STI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE 06: CASSETTE DECK & STARRY LIVE PLAYER -->
+  <section class="cassette-section" id="cassette">
+    <div class="cassette-deck-card">
+      <div class="cassette-visual-frame">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" class="cassette-tape-graphic">
+          <defs>
+            <linearGradient id="tapeBody" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#24232a"/>
+              <stop offset="100%" stop-color="#141318"/>
+            </linearGradient>
+            <linearGradient id="labelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ff7597"/>
+              <stop offset="25%" stop-color="#ffd13b"/>
+              <stop offset="50%" stop-color="#4383ff"/>
+              <stop offset="100%" stop-color="#ff4d4d"/>
+            </linearGradient>
+          </defs>
+          <rect x="20" y="15" width="360" height="220" rx="14" fill="url(#tapeBody)" stroke="#3a3845" stroke-width="3"/>
+          <circle cx="35" cy="30" r="4" fill="#666"/>
+          <circle cx="365" cy="30" r="4" fill="#666"/>
+          <circle cx="35" cy="220" r="4" fill="#666"/>
+          <circle cx="365" cy="220" r="4" fill="#666"/>
+          <rect x="45" y="35" width="310" height="150" rx="8" fill="#f8f9fa"/>
+          <rect x="45" y="35" width="310" height="20" fill="url(#labelGrad)"/>
+          <text x="60" y="80" font-family="'Courier New', monospace" font-weight="bold" font-size="20" fill="#1b1b22">KESSOKU BAND // LIVE DEMO</text>
+          <text x="60" y="100" font-family="'Courier New', monospace" font-size="12" fill="#555">SIDE A · THAT BAND (あのバンド) [GUITAR HERO SOLO]</text>
+          <rect x="90" y="115" width="220" height="60" rx="6" fill="#111016" stroke="#444" stroke-width="2"/>
+          <g transform="translate(140, 145)">
+            <g class="spool spool-left spool-spinning" id="spoolLeft">
+              <circle cx="0" cy="0" r="22" fill="#2c2b36" stroke="#ffd13b" stroke-width="2.5"/>
+              <circle cx="0" cy="0" r="9" fill="#111016"/>
+              <rect x="-3" y="-22" width="6" height="8" fill="#ffd13b"/>
+              <rect x="-3" y="14" width="6" height="8" fill="#ffd13b"/>
+              <rect x="-22" y="-3" width="8" height="6" fill="#ffd13b"/>
+              <rect x="14" y="-3" width="8" height="6" fill="#ffd13b"/>
+            </g>
+          </g>
+          <g transform="translate(260, 145)">
+            <g class="spool spool-right spool-spinning" id="spoolRight">
+              <circle cx="0" cy="0" r="22" fill="#2c2b36" stroke="#ffd13b" stroke-width="2.5"/>
+              <circle cx="0" cy="0" r="9" fill="#111016"/>
+              <rect x="-3" y="-22" width="6" height="8" fill="#ffd13b"/>
+              <rect x="-3" y="14" width="6" height="8" fill="#ffd13b"/>
+              <rect x="-22" y="-3" width="8" height="6" fill="#ffd13b"/>
+              <rect x="14" y="-3" width="8" height="6" fill="#ffd13b"/>
+            </g>
+          </g>
+          <line x1="162" y1="145" x2="238" y2="145" stroke="#4a3b32" stroke-width="12"/>
+          <polygon points="100,235 300,235 280,195 120,195" fill="#19181f" stroke="#333" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <div class="cassette-controls">
+        <span class="cassette-track-subtitle">LIVE AT SHIMOKITAZAWA STARRY · SIDE A</span>
+        <h3 class="cassette-track-title">THAT BAND (あのバンド)</h3>
+        <p style="color: #a4a3b2; line-height: 1.5; font-size: 0.95rem;">
+          The legendary impromptu guitar solo that broke the suffocating tension, turning a storm-swept venue into a hall of awe.
+        </p>
+
+        <div class="cassette-btn-row">
+          <button class="cassette-play-btn interactive-btn" id="deckPlayBtn">
+            <span class="deck-btn-text">PAUSE TAPE</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-title-card-wrap">
+      <img src="./assets/gallery/still_ep12_1.jpg" alt="Bocchi The Rock Anime Title Card" class="footer-title-card" />
+    </div>
+
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="./assets/common/logo.svg" alt="Bocchi the Rock Logo" />
+        <span>© AKI HAMAZI / HOUBUNSHA, ANIPLEX</span>
+      </div>
+      <div>
+        <span>ENGINEERED WITH HAUTE EDITORIAL & LANDING-PAGE-SKILL // 120 FPS CANVAS // KESSOKU BAND ARCHIVES</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="High-Definition Image Viewer">
+    <button class="lightbox-close interactive-btn" id="lightboxClose" aria-label="Close viewer">&times;</button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-frame">
+        <img id="lightboxImg" src="" alt="Specimen" />
+      </div>
+      <div class="lightbox-details">
+        <div class="lightbox-tag-row">
+          <span class="zine-tag zine-tag-pink" id="lightboxBadge">STAGE ARCHIVE</span>
+          <span class="zine-tag">SHIMOKITAZAWA STARRY</span>
+        </div>
+        <h2 class="lightbox-title" id="lightboxTitle"></h2>
+        <p class="lightbox-desc" id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Entry Script -->
+  <script type="module" src="./src/scripts/main.js"></script>
+</body>
+</html>

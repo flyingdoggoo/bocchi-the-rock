@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" width="100" height="160">
+  <defs>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9a9e" />
+      <stop offset="99%" stop-color="#fecfef" />
+    </linearGradient>
+  </defs>
+  <!-- Phone Body -->
+  <rect x="8" y="8" width="84" height="144" rx="14" fill="#2d2b38" stroke="#4a475a" stroke-width="2.5" />
+  <!-- Screen -->
+  <rect x="14" y="18" width="72" height="124" rx="6" fill="url(#screenGrad)" />
+  <!-- Dynamic Island Notch -->
+  <rect x="36" y="22" width="28" height="6" rx="3" fill="#1b1a22" />
+  <!-- Camera Reticle in Center -->
+  <circle cx="50" cy="75" r="18" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4 2" />
+  <circle cx="50" cy="75" r="2.5" fill="#ffffff" />
+  <!-- Red REC dot -->
+  <circle cx="24" cy="36" r="3" fill="#ff2a70" />
+  <text x="32" y="39" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#ffffff">LIVE</text>
+  <!-- Instagram style Heart sticker -->
+  <path d="M 50,118 C 50,118 38,108 38,100 C 38,94 43,90 48,93 C 50,94 50,94 50,94 C 50,94 50,94 52,93 C 57,90 62,94 62,100 C 62,108 50,118 50,118 Z" fill="#ff4d4d" />
+  <text x="50" y="132" font-family="'Arial', sans-serif" font-size="7" font-weight="bold" fill="#ffffff" text-anchor="middle">@kitーン</text>
+</svg>

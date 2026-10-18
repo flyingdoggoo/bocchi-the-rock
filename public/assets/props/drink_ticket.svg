@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" width="160" height="90">
+  <!-- STARRY Live House Drink Ticket -->
+  <rect x="5" y="5" width="150" height="80" rx="4" fill="#ffd13b" stroke="#222" stroke-width="2" />
+  <line x1="42" y1="5" x2="42" y2="85" stroke="#222" stroke-width="1.5" stroke-dasharray="4 3" />
+  <!-- Stub text -->
+  <text x="12" y="32" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#111" transform="rotate(-90 20 45)">#0828</text>
+  <!-- Main ticket body -->
+  <text x="52" y="28" font-family="'Barlow Condensed', sans-serif" font-weight="900" font-size="16" fill="#111">STARRY DRINK</text>
+  <text x="52" y="44" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="#333">ONE DRINK ONLY · ¥600</text>
+  <text x="52" y="60" font-family="'Courier New', monospace" font-size="8" fill="#555">SHIMOKITAZAWA LIVE HOUSE</text>
+  <!-- Mini Barcode -->
+  <g transform="translate(52, 68)">
+    <rect x="0" y="0" width="2" height="12" fill="#111"/>
+    <rect x="4" y="0" width="3" height="12" fill="#111"/>
+    <rect x="9" y="0" width="1" height="12" fill="#111"/>
+    <rect x="12" y="0" width="4" height="12" fill="#111"/>
+    <rect x="18" y="0" width="2" height="12" fill="#111"/>
+    <rect x="22" y="0" width="5" height="12" fill="#111"/>
+    <rect x="30" y="0" width="2" height="12" fill="#111"/>
+    <rect x="34" y="0" width="3" height="12" fill="#111"/>
+    <rect x="39" y="0" width="1" height="12" fill="#111"/>
+    <rect x="42" y="0" width="4" height="12" fill="#111"/>
+    <rect x="48" y="0" width="2" height="12" fill="#111"/>
+    <rect x="52" y="0" width="4" height="12" fill="#111"/>
+    <rect x="58" y="0" width="1" height="12" fill="#111"/>
+    <rect x="62" y="0" width="3" height="12" fill="#111"/>
+    <rect x="67" y="0" width="2" height="12" fill="#111"/>
+    <rect x="71" y="0" width="4" height="12" fill="#111"/>
+    <rect x="77" y="0" width="2" height="12" fill="#111"/>
+    <rect x="81" y="0" width="5" height="12" fill="#111"/>
+  </g>
+</svg>

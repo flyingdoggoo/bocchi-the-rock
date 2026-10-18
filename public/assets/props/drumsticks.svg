@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="woodStick" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5deb3" />
+      <stop offset="50%" stop-color="#deb887" />
+      <stop offset="100%" stop-color="#c19a6b" />
+    </linearGradient>
+  </defs>
+  <!-- Crossed Drumsticks -->
+  <g transform="rotate(35 60 60)">
+    <rect x="56" y="10" width="8" height="100" rx="4" fill="url(#woodStick)" stroke="#8b5a2b" stroke-width="1.5" />
+    <ellipse cx="60" cy="12" rx="5" ry="7" fill="#f5deb3" stroke="#8b5a2b" stroke-width="1.5" />
+    <rect x="56" y="85" width="8" height="8" fill="#ffd13b" opacity="0.8" />
+  </g>
+  <g transform="rotate(-35 60 60)">
+    <rect x="56" y="10" width="8" height="100" rx="4" fill="url(#woodStick)" stroke="#8b5a2b" stroke-width="1.5" />
+    <ellipse cx="60" cy="12" rx="5" ry="7" fill="#f5deb3" stroke="#8b5a2b" stroke-width="1.5" />
+    <rect x="56" y="85" width="8" height="8" fill="#ffd13b" opacity="0.8" />
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <circle cx="50" cy="50" r="38" fill="#ff7597"/>
+  <!-- Cubes -->
+  <rect x="18" y="18" width="14" height="14" rx="2" fill="#4383ff" stroke="#1a1a24" stroke-width="2"/>
+  <rect x="28" y="24" width="14" height="14" rx="2" fill="#ffd13b" stroke="#1a1a24" stroke-width="2"/>
+  <!-- Face Skin -->
+  <path d="M 28 42 Q 50 38 72 42 Q 76 70 50 80 Q 24 70 28 42 Z" fill="#fff0e6"/>
+  <!-- Bangs shaking -->
+  <path d="M 24 38 Q 38 56 42 42 Q 54 58 62 40 Q 72 54 76 36 Q 50 28 24 38 Z" fill="#ff7597"/>
+  <!-- Panic Spirals / Screaming Hollow Eyes -->
+  <circle cx="38" cy="50" r="6" fill="none" stroke="#1b1b22" stroke-width="2.5"/>
+  <circle cx="62" cy="50" r="6" fill="none" stroke="#1b1b22" stroke-width="2.5"/>
+  <circle cx="38" cy="50" r="2" fill="#1b1b22"/>
+  <circle cx="62" cy="50" r="2" fill="#1b1b22"/>
+  <!-- Screaming wide open zig-zag mouth -->
+  <path d="M 42 62 L 46 66 L 50 62 L 54 66 L 58 62 L 56 72 L 44 72 Z" fill="#ff4d79" stroke="#1b1b22" stroke-width="2"/>
+  <!-- Heavy blue panic shadow lines on forehead -->
+  <line x1="36" y1="40" x2="36" y2="46" stroke="#4383ff" stroke-width="2"/>
+  <line x1="42" y1="38" x2="42" y2="45" stroke="#4383ff" stroke-width="2"/>
+  <line x1="48" y1="37" x2="48" y2="44" stroke="#4383ff" stroke-width="2"/>
+  <line x1="54" y1="38" x2="54" y2="45" stroke="#4383ff" stroke-width="2"/>
+  <line x1="60" y1="40" x2="60" y2="46" stroke="#4383ff" stroke-width="2"/>
+</svg>

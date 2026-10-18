@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" width="140" height="100">
+  <!-- Crumpled paper note -->
+  <polygon points="8,8 132,4 128,94 12,96 6,55" fill="#fefae0" stroke="#d4a373" stroke-width="1.5"/>
+  <text x="18" y="28" font-family="'Comic Sans MS', cursive, sans-serif" font-size="10" font-weight="bold" fill="#1b4332">山田 リョウ (借用書)</text>
+  <line x1="16" y1="34" x2="124" y2="34" stroke="#d4a373" stroke-width="1"/>
+  <text x="18" y="52" font-family="'Comic Sans MS', cursive, sans-serif" font-size="10.5" font-weight="bold" fill="#003049">ぼっちちゃんへ：</text>
+  <text x="22" y="70" font-family="'Comic Sans MS', cursive, sans-serif" font-size="12" font-weight="bold" fill="#d90429">¥1,000 貸して</text>
+  <text x="35" y="86" font-family="'Comic Sans MS', cursive, sans-serif" font-size="8" fill="#6c757d">(ヴィンテージエフェクター買った)</text>
+  <!-- Tape strip -->
+  <rect x="45" y="-3" width="40" height="12" fill="#4383ff" opacity="0.8" rx="1" transform="rotate(2 65 3)"/>
+</svg>

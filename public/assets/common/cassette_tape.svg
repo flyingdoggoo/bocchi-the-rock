@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="tapeBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24232a"/>
+      <stop offset="100%" stop-color="#141318"/>
+    </linearGradient>
+    <linearGradient id="labelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7597"/>
+      <stop offset="25%" stop-color="#ffd13b"/>
+      <stop offset="50%" stop-color="#4383ff"/>
+      <stop offset="100%" stop-color="#ff4d4d"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Shell -->
+  <rect x="20" y="15" width="360" height="220" rx="14" fill="url(#tapeBody)" stroke="#3a3845" stroke-width="3"/>
+  <!-- Corner Screws -->
+  <circle cx="35" cy="30" r="4" fill="#666"/>
+  <circle cx="365" cy="30" r="4" fill="#666"/>
+  <circle cx="35" cy="220" r="4" fill="#666"/>
+  <circle cx="365" cy="220" r="4" fill="#666"/>
+  
+  <!-- Paper Label -->
+  <rect x="45" y="35" width="310" height="150" rx="8" fill="#f8f9fa"/>
+  <!-- Color Band on Label -->
+  <rect x="45" y="35" width="310" height="20" fill="url(#labelGrad)"/>
+  
+  <!-- Handwritten Cassette Title -->
+  <text x="60" y="80" font-family="'Courier New', monospace" font-weight="bold" font-size="20" fill="#1b1b22">KESSOKU BAND // LIVE DEMO</text>
+  <text x="60" y="100" font-family="'Courier New', monospace" font-size="12" fill="#555">SIDE A · THAT BAND (あのバンド) [GUITAR HERO SOLO]</text>
+  
+  <!-- Clear Window in center -->
+  <rect x="90" y="115" width="220" height="60" rx="6" fill="#111016" stroke="#444" stroke-width="2"/>
+  
+  <!-- Two Rotating Tape Hubs / Spools -->
+  <!-- Left Spool -->
+  <g class="spool spool-left" id="spoolLeft" transform="translate(140, 145)">
+    <circle cx="0" cy="0" r="22" fill="#333" stroke="#ffd13b" stroke-width="2"/>
+    <circle cx="0" cy="0" r="9" fill="#111016"/>
+    <!-- Teeth -->
+    <rect x="-3" y="-22" width="6" height="8" fill="#ffd13b"/>
+    <rect x="-3" y="14" width="6" height="8" fill="#ffd13b"/>
+    <rect x="-22" y="-3" width="8" height="6" fill="#ffd13b"/>
+    <rect x="14" y="-3" width="8" height="6" fill="#ffd13b"/>
+  </g>
+  
+  <!-- Right Spool -->
+  <g class="spool spool-right" id="spoolRight" transform="translate(260, 145)">
+    <circle cx="0" cy="0" r="22" fill="#333" stroke="#ffd13b" stroke-width="2"/>
+    <circle cx="0" cy="0" r="9" fill="#111016"/>
+    <!-- Teeth -->
+    <rect x="-3" y="-22" width="6" height="8" fill="#ffd13b"/>
+    <rect x="-3" y="14" width="6" height="8" fill="#ffd13b"/>
+    <rect x="-22" y="-3" width="8" height="6" fill="#ffd13b"/>
+    <rect x="14" y="-3" width="8" height="6" fill="#ffd13b"/>
+  </g>
+  
+  <!-- Tape Magnetic Ribbon view -->
+  <line x1="162" y1="145" x2="238" y2="145" stroke="#4a3b32" stroke-width="12"/>
+  
+  <!-- Bottom Trapezoid indent -->
+  <polygon points="100,235 300,235 280,195 120,195" fill="#19181f" stroke="#333" stroke-width="2"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <filter id="auraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Kita-Aura Blinding Sparkles -->
+  <!-- Main 4-point star -->
+  <path d="M 60,10 Q 60,60 110,60 Q 60,60 60,110 Q 60,60 10,60 Q 60,60 60,10 Z" fill="#ff4d4d" filter="url(#auraGlow)"/>
+  <path d="M 60,25 Q 60,60 95,60 Q 60,60 60,95 Q 60,60 25,60 Q 60,60 60,25 Z" fill="#ffeaa7"/>
+  <circle cx="60" cy="60" r="12" fill="#ffffff" filter="url(#auraGlow)"/>
+  
+  <!-- Mini secondary sparkles -->
+  <path d="M 95,20 Q 95,32 107,32 Q 95,32 95,44 Q 95,32 83,32 Q 95,32 95,20 Z" fill="#ffd13b" filter="url(#auraGlow)"/>
+  <path d="M 25,85 Q 25,95 35,95 Q 25,95 25,105 Q 25,95 15,95 Q 25,95 25,85 Z" fill="#ff7597" filter="url(#auraGlow)"/>
+  
+  <!-- Sound effect text -->
+  <text x="60" y="116" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="12" fill="#ff4d4d" text-anchor="middle" letter-spacing="1">✨ 喜多〜ん ✨</text>
+</svg>

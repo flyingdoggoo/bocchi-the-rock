@@ -1,0 +1,238 @@
+/* ==========================================================================
+   ANIMATIONS & EMIL KOWALSKI MICRO-INTERACTIONS
+   ========================================================================== */
+
+/* 1. Tactile Button Micro-Interactions (0ms latency, sub-200ms spring) */
+button, .interactive-btn {
+  transition: transform var(--transition-fast), 
+              box-shadow var(--transition-fast), 
+              background-color var(--transition-fast),
+              border-color var(--transition-fast);
+  cursor: pointer;
+}
+
+button:active, .interactive-btn:active {
+  transform: scale(0.96);
+}
+
+/* 2. Realtime Cute Bocchi Click Particles */
+.bocchi-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  user-select: none;
+  will-change: transform, opacity;
+  animation: particleFloat 650ms var(--ease-snappy) forwards;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4) rotate(var(--rot-start, -10deg));
+    opacity: 1;
+  }
+  30% {
+    transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, -40px))) scale(1.15) rotate(var(--rot-mid, 12deg));
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + calc(var(--dx, 0px) * 1.5)), calc(-50% + calc(var(--dy, -40px) - 35px))) scale(0.85) rotate(var(--rot-end, -5deg));
+    opacity: 0;
+  }
+}
+
+/* 3. Bocchi Panic Glitch Effect */
+.glitch-active {
+  position: relative;
+  animation: jitter 0.12s infinite;
+}
+
+.glitch-active::before,
+.glitch-active::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-active::before {
+  left: 2px;
+  text-shadow: -2px 0 var(--ryo-blue);
+  clip-path: inset(20% 0 30% 0);
+  animation: glitch-anim-1 0.4s infinite linear alternate-reverse;
+}
+
+.glitch-active::after {
+  left: -2px;
+  text-shadow: 2px 0 var(--bocchi-pink);
+  clip-path: inset(50% 0 10% 0);
+  animation: glitch-anim-2 0.3s infinite linear alternate-reverse;
+}
+
+@keyframes jitter {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2px, 1px); }
+  50% { transform: translate(2px, -1px); }
+  75% { transform: translate(-1px, -2px); }
+  100% { transform: translate(1px, 2px); }
+}
+
+@keyframes glitch-anim-1 {
+  0% { clip-path: inset(10% 0 60% 0); }
+  50% { clip-path: inset(40% 0 20% 0); }
+  100% { clip-path: inset(70% 0 5% 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip-path: inset(30% 0 40% 0); }
+  50% { clip-path: inset(10% 0 80% 0); }
+  100% { clip-path: inset(60% 0 15% 0); }
+}
+
+/* 4. Tsuchinoko Slime Wobble */
+.slime-wobble {
+  transform-origin: bottom center;
+  animation: slimeSquish 3s ease-in-out infinite;
+}
+
+@keyframes slimeSquish {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  35% {
+    transform: scale(1.08, 0.92) translateY(2px);
+  }
+  70% {
+    transform: scale(0.94, 1.05) translateY(-3px);
+  }
+}
+
+/* 5. Mango Box Nervous Shake */
+.box-nervous {
+  animation: boxTremble 2.5s ease-in-out infinite;
+}
+
+@keyframes boxTremble {
+  0%, 80%, 100% { transform: translateY(0); }
+  85% { transform: translateY(-4px) rotate(-1deg); }
+  90% { transform: translateY(1px) rotate(1deg); }
+  95% { transform: translateY(-2px) rotate(0deg); }
+}
+
+/* 6. Rotating Cassette Spools */
+.spool-spinning {
+  animation: spinSpool 2.4s linear infinite;
+  transform-origin: 0 0;
+}
+
+@keyframes spinSpool {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 7. Audio-Reactive Equalizer Bars */
+.audio-bar {
+  width: 4px;
+  background: var(--bocchi-pink);
+  border-radius: 2px;
+  transition: height 60ms ease;
+  height: 6px;
+}
+
+.audio-bar.playing {
+  animation: eqBounce 0.5s ease-in-out infinite alternate;
+}
+
+.audio-bar:nth-child(2) { animation-delay: 0.1s; background: var(--nijika-yellow); }
+.audio-bar:nth-child(3) { animation-delay: 0.25s; background: var(--ryo-blue); }
+.audio-bar:nth-child(4) { animation-delay: 0.15s; background: var(--kita-red); }
+.audio-bar:nth-child(5) { animation-delay: 0.3s; background: var(--bocchi-pink); }
+.audio-bar:nth-child(6) { animation-delay: 0.05s; background: var(--starry-gold); }
+.audio-bar:nth-child(7) { animation-delay: 0.2s; background: var(--bocchi-pink); }
+.audio-bar:nth-child(8) { animation-delay: 0.35s; background: var(--nijika-yellow); }
+
+@keyframes eqBounce {
+  0% { height: 4px; }
+  100% { height: 26px; }
+}
+
+/* 8. Stage Spotlight Cone Sweep */
+.spotlight-sweep {
+  animation: spotSwing 8s ease-in-out infinite alternate;
+  transform-origin: top center;
+}
+
+@keyframes spotSwing {
+  0% { transform: rotate(-15deg); opacity: 0.3; }
+  50% { opacity: 0.7; }
+  100% { transform: rotate(15deg); opacity: 0.3; }
+}
+
+/* 9. Character Props Floating Springs */
+@keyframes propFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--prop-rot, -3deg));
+  }
+  50% {
+    transform: translateY(-10px) rotate(calc(var(--prop-rot, -3deg) + 3deg));
+  }
+}
+
+@keyframes propFloatAlt {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--prop-rot, 4deg));
+  }
+  50% {
+    transform: translateY(-12px) rotate(calc(var(--prop-rot, 4deg) - 4deg));
+  }
+}
+
+@keyframes ahogeTwitch {
+  0%, 80%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  85% {
+    transform: scale(1.18) rotate(12deg);
+  }
+  92% {
+    transform: scale(0.92) rotate(-8deg);
+  }
+}
+
+@keyframes kitaSparklePulse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 10px rgba(255, 77, 77, 0.4));
+  }
+  50% {
+    transform: scale(1.16) rotate(15deg);
+    filter: drop-shadow(0 0 25px rgba(255, 77, 77, 0.85));
+  }
+}
+
+/* 10. Background Ambient Light Motes Drift */
+@keyframes moteDrift {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-80px) translateX(25px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-160px) translateX(-20px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes ghostTypeFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--ghost-rot, -6deg));
+  }
+  50% {
+    transform: translateY(-20px) rotate(calc(var(--ghost-rot, -6deg) + 1.5deg));
+  }
+}
+

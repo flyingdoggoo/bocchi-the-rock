@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" width="120" height="150">
+  <defs>
+    <filter id="pedalShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <!-- Pedal Chassis -->
+  <rect x="15" y="15" width="90" height="120" rx="8" fill="#18181f" stroke="#333240" stroke-width="2.5" filter="url(#pedalShadow)"/>
+  <!-- Top Faceplate Slanted Look -->
+  <polygon points="17,17 103,17 99,65 21,65" fill="#101015"/>
+  <!-- RAT style big white logo -->
+  <text x="60" y="52" font-family="'Impact', 'Arial Black', sans-serif" font-weight="bold" font-size="28" fill="#f0eff5" text-anchor="middle" letter-spacing="2">RAT</text>
+  <text x="60" y="62" font-family="'Courier New', monospace" font-size="7" fill="#ff7597" text-anchor="middle" letter-spacing="1">DISTORTION // PRO</text>
+  <!-- 3 Knobs -->
+  <!-- Distortion -->
+  <circle cx="32" cy="30" r="8" fill="#2a2936" stroke="#555" stroke-width="1.5"/>
+  <line x1="32" y1="30" x2="36" y2="24" stroke="#ff7597" stroke-width="2"/>
+  <!-- Filter -->
+  <circle cx="60" cy="24" r="8" fill="#2a2936" stroke="#555" stroke-width="1.5"/>
+  <line x1="60" y1="24" x2="66" y2="24" stroke="#fff" stroke-width="2"/>
+  <!-- Volume -->
+  <circle cx="88" cy="30" r="8" fill="#2a2936" stroke="#555" stroke-width="1.5"/>
+  <line x1="88" y1="30" x2="84" y2="24" stroke="#ff7597" stroke-width="2"/>
+  <!-- Red LED Indicator -->
+  <circle cx="60" cy="74" r="4" fill="#ff2a70"/>
+  <circle cx="60" cy="74" r="7" fill="#ff2a70" opacity="0.4"/>
+  <!-- Stomp Switch -->
+  <circle cx="60" cy="104" r="14" fill="#5a5866" stroke="#888696" stroke-width="2"/>
+  <circle cx="60" cy="104" r="10" fill="#2c2b36"/>
+</svg>

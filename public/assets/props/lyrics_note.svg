@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" width="140" height="100">
+  <!-- Torn notebook paper -->
+  <polygon points="5,5 130,2 135,25 130,50 135,75 130,95 10,92 5,70 8,45 4,20" fill="#fffde8" stroke="#d5ceab" stroke-width="1.5"/>
+  <!-- Lined paper stripes -->
+  <line x1="12" y1="28" x2="128" y2="28" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="12" y1="48" x2="128" y2="48" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="12" y1="68" x2="128" y2="68" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="12" y1="88" x2="128" y2="88" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Handwritten scribbles -->
+  <text x="16" y="24" font-family="'Comic Sans MS', 'Segoe Script', cursive, sans-serif" font-size="9" fill="#1e293b" font-weight="bold">人前怖い...</text>
+  <text x="16" y="44" font-family="'Comic Sans MS', 'Segoe Script', cursive, sans-serif" font-size="8.5" fill="#334155">でもギターなら話せる気がする</text>
+  <text x="16" y="64" font-family="'Comic Sans MS', 'Segoe Script', cursive, sans-serif" font-size="8" fill="#e11d48">あのバンドの音になりたい。</text>
+  <!-- Mini guitar tab scribble -->
+  <text x="16" y="82" font-family="'Courier New', monospace" font-size="7.5" fill="#64748b">e|--12b14--12~~--|</text>
+  <!-- Duct tape on top corner -->
+  <rect x="50" y="-4" width="35" height="14" fill="#ff7597" opacity="0.85" rx="1" transform="rotate(-3 67 3)"/>
+</svg>

@@ -1,0 +1,455 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 820" width="380" height="820">
+  <defs>
+    <!-- Deep Nitrocellulose Lacquer Body Gradient -->
+    <linearGradient id="lpBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2833"/>
+      <stop offset="25%" stop-color="#181720"/>
+      <stop offset="60%" stop-color="#0c0b10"/>
+      <stop offset="100%" stop-color="#030305"/>
+    </linearGradient>
+
+    <!-- Carved Maple Archtop Topographic Shading -->
+    <radialGradient id="archtopShine" cx="42%" cy="62%" r="58%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="shoulderShine" cx="30%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Luxury Gold Hardware Metallic Gradient -->
+    <linearGradient id="lpGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8d1"/>
+      <stop offset="25%" stop-color="#ffd54f"/>
+      <stop offset="65%" stop-color="#ffb300"/>
+      <stop offset="100%" stop-color="#b37d00"/>
+    </linearGradient>
+
+    <!-- Gold Edge Trim -->
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="50%" stop-color="#e6b800"/>
+      <stop offset="100%" stop-color="#805b00"/>
+    </linearGradient>
+
+    <!-- Mother of Pearl Inlay Gradient -->
+    <linearGradient id="pearlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fdf6e2"/>
+      <stop offset="70%" stop-color="#ebdcf0"/>
+      <stop offset="100%" stop-color="#f5e8d0"/>
+    </linearGradient>
+
+    <!-- Pickguard Multi-ply Bevel -->
+    <linearGradient id="pickguardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1d24"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="lpGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="25" flood-color="#ff7597" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Charm Soft Shadow -->
+    <filter id="charmShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- ============================================================ -->
+  <!-- 1. GIBSON OPEN-BOOK HEADSTOCK (1968 CUSTOM "BLACK BEAUTY")     -->
+  <!-- ============================================================ -->
+  <g id="headstock">
+    <!-- Iconic Open-Book / Mustache Headstock Perimeter -->
+    <path d="M 166 135
+             L 150 48
+             C 150 40, 164 34, 178 40
+             C 184 43, 187 43, 190 38
+             C 193 43, 196 43, 202 40
+             C 216 34, 230 40, 230 48
+             L 214 135 Z"
+          fill="#0c0b11" stroke="url(#lpGold)" stroke-width="2.8" filter="url(#lpGlow)"/>
+
+    <!-- Multi-ply Headstock Inner Purfling (Custom 7-ply aged cream) -->
+    <path d="M 169 130
+             L 154 52
+             C 155 46, 166 40, 178 45
+             C 184 48, 187 48, 190 44
+             C 193 48, 196 48, 202 45
+             C 214 40, 225 46, 226 52
+             L 211 130"
+          fill="none" stroke="#fff8e7" stroke-width="1.2" opacity="0.85"/>
+
+    <!-- Mother of Pearl Gibson Cursive Script Logo -->
+    <text x="190" y="66" font-family="'Georgia', serif" font-style="italic" font-weight="bold" font-size="13" fill="url(#pearlGrad)" text-anchor="middle" letter-spacing="1">Gibson</text>
+
+    <!-- Custom Iconic 5-Piece "Split-Diamond" Pearl Inlay -->
+    <!-- Top Center Diamond -->
+    <polygon points="190,75 183,83 190,91 197,83" fill="url(#pearlGrad)" stroke="#1a1920" stroke-width="0.6"/>
+    <!-- Bottom Center Diamond -->
+    <polygon points="190,113 183,105 190,97 197,105" fill="url(#pearlGrad)" stroke="#1a1920" stroke-width="0.6"/>
+    <!-- Left Triangular Flank -->
+    <polygon points="180,92 170,97 180,103" fill="url(#pearlGrad)" stroke="#1a1920" stroke-width="0.6"/>
+    <!-- Right Triangular Flank -->
+    <polygon points="200,92 210,97 200,103" fill="url(#pearlGrad)" stroke="#1a1920" stroke-width="0.6"/>
+
+    <!-- 2-Ply Bell-Shaped Truss Rod Cover ("Les Paul CUSTOM") -->
+    <path d="M 190 120 C 183 120 181 128 181 132 L 199 132 C 199 128 197 120 190 120 Z" fill="#000000" stroke="#ffffff" stroke-width="0.8"/>
+    <circle cx="190" cy="123" r="1.2" fill="url(#lpGold)"/>
+    <text x="190" y="130" font-family="'Arial', sans-serif" font-size="3" font-weight="bold" fill="#ffffff" text-anchor="middle">CUSTOM</text>
+
+    <!-- Gold Grover Rotomatic Tuners (3-per-side with Keystone / Kidney Buttons) -->
+    <!-- Left Side Tuners (Pegheads) -->
+    <g fill="url(#lpGold)" stroke="#664d00" stroke-width="0.8">
+      <!-- High E tuner -->
+      <rect x="134" y="60" width="18" height="5" rx="1.5"/>
+      <ellipse cx="131" cy="62.5" rx="7" ry="10"/>
+      <!-- B tuner -->
+      <rect x="136" y="86" width="18" height="5" rx="1.5"/>
+      <ellipse cx="133" cy="88.5" rx="7" ry="10"/>
+      <!-- G tuner -->
+      <rect x="138" y="112" width="18" height="5" rx="1.5"/>
+      <ellipse cx="135" cy="114.5" rx="7" ry="10"/>
+
+      <!-- Right Side Tuners (D, A, Low E) -->
+      <rect x="228" y="60" width="18" height="5" rx="1.5"/>
+      <ellipse cx="249" cy="62.5" rx="7" ry="10"/>
+      <rect x="226" y="86" width="18" height="5" rx="1.5"/>
+      <ellipse cx="247" cy="88.5" rx="7" ry="10"/>
+      <rect x="224" y="112" width="18" height="5" rx="1.5"/>
+      <ellipse cx="245" cy="114.5" rx="7" ry="10"/>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- CUTE CHARM 1: BOCCHI'S YELLOW & CYAN HAIR CUBES KEYCHAIN! -->
+    <!-- ======================================================== -->
+    <g id="bocchiHairCubesCharm" filter="url(#charmShadow)">
+      <!-- Silver Beaded Chain hanging from High-E Tuner -->
+      <path d="M 132 63 Q 112 70 106 90 Q 102 105 108 120" fill="none" stroke="#e0e0ea" stroke-width="2" stroke-dasharray="3,2"/>
+      <circle cx="132" cy="63" r="2.5" fill="url(#lpGold)"/>
+
+      <!-- Pastel Blue / Cyan Cube -->
+      <g transform="translate(98, 92) rotate(-14 12 12)">
+        <rect x="0" y="0" width="24" height="24" rx="4" fill="#3b82f6" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- 3D Isometric Facet Highlight -->
+        <path d="M 2 2 L 22 2 L 18 6 L 6 6 Z" fill="#60a5fa" opacity="0.9"/>
+        <path d="M 2 2 L 6 6 L 6 18 L 2 22 Z" fill="#93c5fd" opacity="0.8"/>
+        <text x="12" y="16" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">·ᴗ·</text>
+      </g>
+
+      <!-- Pastel Yellow Cube -->
+      <g transform="translate(106, 114) rotate(16 12 12)">
+        <rect x="0" y="0" width="24" height="24" rx="4" fill="#fbbf24" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- 3D Isometric Facet Highlight -->
+        <path d="M 2 2 L 22 2 L 18 6 L 6 6 Z" fill="#fde68a" opacity="0.9"/>
+        <path d="M 2 2 L 6 6 L 6 18 L 2 22 Z" fill="#fef3c7" opacity="0.8"/>
+        <text x="12" y="16" font-family="'Courier New', monospace" font-size="7" font-weight="bold" fill="#78350f" text-anchor="middle">&gt;﹏&lt;</text>
+      </g>
+
+      <!-- Dangling Star Charm with Pink Ribbon -->
+      <path d="M 118 138 Q 120 148 116 155" fill="none" stroke="#ff7597" stroke-width="2"/>
+      <polygon points="116,155 119,162 127,162 120,167 123,174 116,169 109,174 112,167 105,162 113,162" fill="#ffd13b" stroke="#ffffff" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 2. NECK & EBONY FRETBOARD WITH PEARL CUSTOM BLOCK INLAYS       -->
+  <!-- ============================================================ -->
+  <g id="neckAndFretboard">
+    <!-- Bone Nut (Aged Cream) -->
+    <rect x="173" y="134" width="34" height="6" rx="1.5" fill="#fff8e7" stroke="#d5c8a9" stroke-width="1"/>
+
+    <!-- Ebony Fretboard (Tapering from 34px at nut to 50px at body joint) -->
+    <path d="M 174 140 L 165 375 L 215 375 L 206 140 Z" fill="#131217" stroke="#fff8e7" stroke-width="1.6"/>
+
+    <!-- Mother of Pearl Custom Block Inlays (Authentic Les Paul Custom) -->
+    <!-- 1st Fret -->
+    <rect x="178" y="152" width="24" height="11" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+    <!-- 3rd Fret -->
+    <rect x="177" y="180" width="26" height="11" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+    <!-- 5th Fret -->
+    <rect x="176" y="210" width="28" height="11" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+    <!-- 7th Fret -->
+    <rect x="175" y="244" width="30" height="11" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+    <!-- 9th Fret -->
+    <rect x="174" y="278" width="32" height="11" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+    <!-- 12th Fret (Iconic Double-Width Pearl Block) -->
+    <rect x="172" y="314" width="36" height="11" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+    <!-- 15th Fret -->
+    <rect x="171" y="344" width="38" height="10" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+    <!-- 17th Fret -->
+    <rect x="170" y="364" width="40" height="8" fill="url(#pearlGrad)" stroke="#1a1a1a" stroke-width="0.6"/>
+
+    <!-- 22 Medium Jumbo Frets (Silver Nickel) -->
+    <g stroke="#d5d5df" stroke-width="1.2" opacity="0.9">
+      <line x1="174" y1="147" x2="206" y2="147"/>
+      <line x1="174" y1="165" x2="206" y2="165"/>
+      <line x1="173" y1="176" x2="207" y2="176"/>
+      <line x1="173" y1="194" x2="207" y2="194"/>
+      <line x1="172" y1="206" x2="208" y2="206"/>
+      <line x1="172" y1="225" x2="208" y2="225"/>
+      <line x1="171" y1="239" x2="209" y2="239"/>
+      <line x1="171" y1="258" x2="209" y2="258"/>
+      <line x1="170" y1="273" x2="210" y2="273"/>
+      <line x1="170" y1="292" x2="210" y2="292"/>
+      <line x1="169" y1="310" x2="211" y2="310"/>
+      <line x1="168" y1="328" x2="212" y2="328"/>
+      <line x1="168" y1="340" x2="212" y2="340"/>
+      <line x1="167" y1="356" x2="213" y2="356"/>
+      <line x1="166" y1="368" x2="214" y2="368"/>
+      <line x1="165" y1="375" x2="215" y2="375"/>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 3. AUTHENTIC GIBSON LES PAUL SINGLE-CUTAWAY SOLID BODY         -->
+  <!-- ============================================================ -->
+  <g id="guitarBody">
+    <!-- 
+      AUTHENTIC SINGLE CUTAWAY LES PAUL CONTOUR:
+      - Starts at Neck Joint Left: (165, 375)
+      - Swells into broad Upper Bass Shoulder: (75, 435)
+      - Tucks smoothly into narrow Waist: (108, 515)
+      - Swells into massive Lower Bass Bout: (68, 630)
+      - Rounds gracefully around Bottom Bout: (190, 740)
+      - Rounds into Lower Treble Bout: (312, 630)
+      - Tucks into Treble Waist: (272, 515)
+      - SWEEPS INTO SHARP FLORENTINE HORN (NO SHOULDER ON TREBLE SIDE!): Horn Tip at (266, 440)
+      - SCOOPS DEEPLY BACK TO THE FRETBOARD JOINT: Scoop bottom at (224, 465) returning to (215, 375)!
+    -->
+    <path d="M 165 375
+             C 125 375, 75 405, 75 440
+             C 75 480, 108 505, 108 525
+             C 108 550, 68 585, 68 635
+             C 68 705, 120 740, 190 740
+             C 260 740, 312 705, 312 635
+             C 312 585, 272 550, 272 525
+             C 272 510, 280 475, 268 440
+             C 262 425, 252 442, 245 455
+             C 236 470, 222 472, 218 445
+             C 216 425, 215 395, 215 375 Z"
+          fill="url(#lpBodyGrad)"
+          stroke="url(#lpGold)"
+          stroke-width="4.5"
+          filter="url(#lpGlow)"/>
+
+    <!-- Multi-ply Aged Cream Custom Purfling (7-ply binding highlight line) -->
+    <path d="M 167 380
+             C 130 380, 82 408, 82 440
+             C 82 477, 113 502, 113 525
+             C 113 548, 75 582, 75 632
+             C 75 698, 125 733, 190 733
+             C 255 733, 305 698, 305 632
+             C 305 582, 267 548, 267 525
+             C 267 512, 274 478, 263 444
+             C 258 433, 250 446, 243 458
+             C 233 475, 224 474, 221 445
+             C 219 425, 218 395, 218 380"
+          fill="none" stroke="#fff8e7" stroke-width="1.8" opacity="0.9"/>
+
+    <!-- Subtle Inner Lacquer Bevel Line -->
+    <path d="M 169 385
+             C 135 385, 88 412, 88 440
+             C 88 474, 118 498, 118 525
+             C 118 546, 82 580, 82 630
+             C 82 692, 130 726, 190 726
+             C 250 726, 298 692, 298 630
+             C 298 580, 262 546, 262 525
+             C 262 514, 268 482, 258 450
+             C 253 440, 246 450, 240 462
+             C 232 475, 226 470, 223 445
+             C 221 425, 220 398, 220 385"
+          fill="none" stroke="#ffe082" stroke-width="0.6" opacity="0.4"/>
+
+    <!-- Carved Maple Archtop Topographic Radial Glow -->
+    <ellipse cx="188" cy="590" rx="76" ry="115" fill="url(#archtopShine)"/>
+    <ellipse cx="140" cy="460" rx="46" ry="48" fill="url(#shoulderShine)"/>
+
+    <!-- 3-Way Pickup Toggle Switch & Poker Chip Washer (Upper Bass Bout) -->
+    <g id="toggleSwitch">
+      <!-- Outer Black Plastic Washer -->
+      <circle cx="128" cy="435" r="14" fill="#141318" stroke="url(#lpGold)" stroke-width="1.2"/>
+      <circle cx="128" cy="435" r="11" fill="#1e1d24"/>
+      <!-- Gold Hot-Stamped Text -->
+      <text x="128" y="428" font-family="'Arial', sans-serif" font-size="4" font-weight="bold" fill="url(#lpGold)" text-anchor="middle">RHYTHM</text>
+      <text x="128" y="445" font-family="'Arial', sans-serif" font-size="4" font-weight="bold" fill="url(#lpGold)" text-anchor="middle">TREBLE</text>
+      <!-- Knurled Gold Nut & Vintage Amber Switch Tip -->
+      <circle cx="128" cy="435" r="5" fill="url(#lpGold)"/>
+      <circle cx="128" cy="435" r="3" fill="#ffe082" stroke="#ffb300" stroke-width="0.8"/>
+    </g>
+
+    <!-- Multi-Ply Les Paul Pickguard with Beveled Edge -->
+    <g id="pickguard">
+      <path d="M 158 405
+               L 158 535
+               L 142 538
+               C 126 510, 118 465, 128 420
+               C 134 405, 146 405, 158 405 Z"
+            fill="url(#pickguardGrad)" stroke="#fff8e7" stroke-width="1.5"/>
+      <!-- Pickguard Gold Mounting Bracket -->
+      <rect x="122" y="492" width="9" height="3" fill="url(#lpGold)"/>
+      <circle cx="126.5" cy="493.5" r="1.2" fill="#333"/>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- CUTE CHARM 2: PINK "GUITARHERO" CELLULOID PICK IN PICKGUARD -->
+    <!-- ======================================================== -->
+    <g id="heroPickCharm" filter="url(#charmShadow)">
+      <!-- Triangular Celluloid Pick Tucked Under Pickguard -->
+      <polygon points="144,460 166,450 168,478" fill="#ff7597" stroke="#ffffff" stroke-width="1.8"/>
+      <!-- Celluloid Pearlescent Sheen -->
+      <polygon points="146,461 163,453 158,468" fill="#ffa4be" opacity="0.6"/>
+      <!-- Blushing Kaomoji on Pick -->
+      <text x="157" y="464" font-family="'Courier New', monospace" font-size="6.5" font-weight="bold" fill="#ffffff" text-anchor="middle" transform="rotate(18 157 464)">&gt; ﹏ &lt;</text>
+      <text x="157" y="471" font-family="'Arial', sans-serif" font-size="3.5" font-weight="bold" fill="#ffffff" text-anchor="middle" transform="rotate(18 157 471)">HERO</text>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- 4. GOLD HARDWARE: HUMBUCKERS, TUNE-O-MATIC & STOPBAR      -->
+    <!-- ======================================================== -->
+    <!-- Neck Pickup (Gold 490R Humbucker with Black Mounting Ring) -->
+    <g id="neckPickup">
+      <rect x="168" y="405" width="44" height="26" rx="2" fill="#08080c" stroke="#2a2833" stroke-width="1"/>
+      <rect x="171" y="408" width="38" height="20" rx="1.5" fill="url(#lpGold)" stroke="#997300" stroke-width="0.8"/>
+      <!-- 6 Adjustable Gold Pole Screws -->
+      <circle cx="176" cy="418" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="182" cy="418" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="188" cy="418" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="194" cy="418" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="200" cy="418" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="206" cy="418" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+    </g>
+
+    <!-- Bridge Pickup (Gold 498T High-Output Humbucker) -->
+    <g id="bridgePickup">
+      <rect x="168" y="470" width="44" height="26" rx="2" fill="#08080c" stroke="#2a2833" stroke-width="1"/>
+      <rect x="171" y="473" width="38" height="20" rx="1.5" fill="url(#lpGold)" stroke="#997300" stroke-width="0.8"/>
+      <!-- 6 Adjustable Gold Pole Screws -->
+      <circle cx="176" cy="483" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="182" cy="483" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="188" cy="483" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="194" cy="483" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="200" cy="483" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+      <circle cx="206" cy="483" r="1.6" fill="#e6a800" stroke="#664d00" stroke-width="0.5"/>
+    </g>
+
+    <!-- Gold ABR-1 Tune-o-Matic Bridge with 6 Individual Saddles -->
+    <g id="tuneOMaticBridge">
+      <rect x="170" y="534" width="40" height="9" rx="2" fill="url(#lpGold)" stroke="#805b00" stroke-width="0.8"/>
+      <!-- Thumbwheel Adjustment Posts -->
+      <circle cx="172" cy="538.5" r="2.5" fill="#ffe082"/>
+      <circle cx="208" cy="538.5" r="2.5" fill="#ffe082"/>
+      <!-- 6 Slotted Brass Saddles -->
+      <rect x="175" y="533" width="3.5" height="4.5" fill="#664d00"/>
+      <rect x="181" y="534" width="3.5" height="4.5" fill="#664d00"/>
+      <rect x="187" y="533" width="3.5" height="4.5" fill="#664d00"/>
+      <rect x="193" y="535" width="3.5" height="4.5" fill="#664d00"/>
+      <rect x="199" y="534" width="3.5" height="4.5" fill="#664d00"/>
+      <rect x="205" y="533" width="3.5" height="4.5" fill="#664d00"/>
+    </g>
+
+    <!-- Massive Gold Stopbar Tailpiece with Anchor Studs -->
+    <g id="stopbarTailpiece">
+      <rect x="168" y="572" width="44" height="10" rx="4" fill="url(#lpGold)" stroke="#805b00" stroke-width="1"/>
+      <circle cx="171" cy="577" r="3.2" fill="#ffe680" stroke="#664d00" stroke-width="0.6"/>
+      <circle cx="209" cy="577" r="3.2" fill="#ffe680" stroke="#664d00" stroke-width="0.6"/>
+    </g>
+
+    <!-- 4 Black Speed Knobs with Embossed Gold Numerals -->
+    <g id="speedKnobs">
+      <!-- Neck Volume -->
+      <circle cx="232" cy="576" r="10" fill="#141318" stroke="url(#lpGold)" stroke-width="1.6"/>
+      <circle cx="232" cy="576" r="7" fill="url(#lpGold)" opacity="0.85"/>
+      <circle cx="232" cy="576" r="3" fill="#141318"/>
+      <!-- Neck Tone -->
+      <circle cx="254" cy="604" r="10" fill="#141318" stroke="url(#lpGold)" stroke-width="1.6"/>
+      <circle cx="254" cy="604" r="7" fill="url(#lpGold)" opacity="0.85"/>
+      <circle cx="254" cy="604" r="3" fill="#141318"/>
+      <!-- Bridge Volume -->
+      <circle cx="220" cy="620" r="10" fill="#141318" stroke="url(#lpGold)" stroke-width="1.6"/>
+      <circle cx="220" cy="620" r="7" fill="url(#lpGold)" opacity="0.85"/>
+      <circle cx="220" cy="620" r="3" fill="#141318"/>
+      <!-- Bridge Tone -->
+      <circle cx="242" cy="648" r="10" fill="#141318" stroke="url(#lpGold)" stroke-width="1.6"/>
+      <circle cx="242" cy="648" r="7" fill="url(#lpGold)" opacity="0.85"/>
+      <circle cx="242" cy="648" r="3" fill="#141318"/>
+    </g>
+
+    <!-- Gold 1/4" Output Jack Plate with 4 Screws on Lower Bout -->
+    <polygon points="296,680 304,672 306,686 298,694" fill="url(#lpGold)" stroke="#333" stroke-width="0.8"/>
+
+    <!-- ======================================================== -->
+    <!-- CUTE CHARM 3: RIPE MANGO BOX STICKER ("完熟マンゴー")    -->
+    <!-- ======================================================== -->
+    <g id="ripeMangoSticker" transform="rotate(-12 125 640)" filter="url(#charmShadow)">
+      <!-- Corrugated Cardboard Decal Border -->
+      <rect x="100" y="622" width="48" height="34" rx="4" fill="#d97706" stroke="#ffffff" stroke-width="1.5"/>
+      <rect x="102" y="624" width="44" height="30" rx="3" fill="#fbbf24"/>
+      <!-- Cute Blushing Mango Mascot Character -->
+      <circle cx="114" cy="639" r="8" fill="#f87171"/>
+      <ellipse cx="114" cy="637" rx="7" ry="8" fill="#fb923c"/>
+      <!-- Blushing Cheeks -->
+      <circle cx="110" cy="640" r="2" fill="#ef4444" opacity="0.8"/>
+      <circle cx="118" cy="640" r="2" fill="#ef4444" opacity="0.8"/>
+      <!-- Eyes & Happy Smile -->
+      <circle cx="112" cy="636" r="1" fill="#1e1d24"/>
+      <circle cx="116" cy="636" r="1" fill="#1e1d24"/>
+      <path d="M 112 638 Q 114 640 116 638" fill="none" stroke="#1e1d24" stroke-width="0.8"/>
+      <!-- Green Sprout Leaf -->
+      <path d="M 114 630 Q 118 626 122 628 Q 118 632 114 630 Z" fill="#22c55e"/>
+
+      <!-- Japanese Bold Seal: 完熟マンゴー -->
+      <text x="133" y="635" font-family="'Noto Sans JP', sans-serif" font-size="6" font-weight="900" fill="#78350f" text-anchor="middle">完熟</text>
+      <text x="133" y="643" font-family="'Noto Sans JP', sans-serif" font-size="4.5" font-weight="900" fill="#78350f" text-anchor="middle">マンゴー</text>
+      <text x="133" y="649" font-family="'Arial', sans-serif" font-size="3" font-weight="bold" fill="#92400e" text-anchor="middle">MIYAZAKI</text>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- CUTE CHARM 4: HOLOGRAPHIC BOCCHI KAOMOJI DECAL           -->
+    <!-- ======================================================== -->
+    <g id="kaomojiDecal" transform="rotate(7 150 685)" filter="url(#charmShadow)">
+      <rect x="126" y="675" width="56" height="22" rx="11" fill="rgba(255, 117, 151, 0.3)" stroke="#ff7597" stroke-width="1.4"/>
+      <text x="154" y="689" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">(⁄ ⁄＞⁄ ▽ ⁄＜⁄ ⁄)</text>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- 5. 6 HIGH-E TO LOW-E STEEL GUITAR STRINGS                -->
+    <!-- ======================================================== -->
+    <g stroke="#ffffff" opacity="0.8">
+      <!-- Low E (6th string, thickest) -->
+      <line x1="176" y1="137" x2="176" y2="577" stroke-width="1.8"/>
+      <!-- A string (5th) -->
+      <line x1="181.5" y1="137" x2="181.5" y2="577" stroke-width="1.4"/>
+      <!-- D string (4th) -->
+      <line x1="187" y1="137" x2="187" y2="577" stroke-width="1.2"/>
+      <!-- G string (3rd) -->
+      <line x1="192.5" y1="137" x2="192.5" y2="577" stroke-width="1.0"/>
+      <!-- B string (2nd) -->
+      <line x1="198" y1="137" x2="198" y2="577" stroke-width="0.8"/>
+      <!-- High E (1st, thinnest - legendary string slide riff!) -->
+      <line x1="203.5" y1="137" x2="203.5" y2="577" stroke-width="0.7"/>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- 6. FLOATING CUTE PARTICLES, MUSIC NOTES & SPARKLES           -->
+  <!-- ============================================================ -->
+  <g id="sparklesAndNotes">
+    <!-- Starry Gold Quarter Note -->
+    <text x="65" y="450" font-family="'Arial', sans-serif" font-size="24" fill="#ffd13b" transform="rotate(-15 65 450)">♪</text>
+    <!-- Pink Beamed Eighth Notes -->
+    <text x="318" y="440" font-family="'Arial', sans-serif" font-size="26" fill="#ff7597" transform="rotate(18 318 440)">♫</text>
+    <!-- Cyan Single Eighth Note -->
+    <text x="82" y="700" font-family="'Arial', sans-serif" font-size="20" fill="#38bdf8" transform="rotate(12 82 700)">♩</text>
+    <!-- Gold Sparkling Star -->
+    <polygon points="70,510 73,518 81,518 75,523 77,531 70,526 63,531 65,523 59,518 67,518" fill="#ffd13b" opacity="0.95"/>
+    <polygon points="305,530 307,536 313,536 308,540 310,546 305,542 300,546 302,540 297,536 303,536" fill="#ff7597" opacity="0.95"/>
+    <!-- Cute Pink Heart -->
+    <path d="M 285 410 C 285 405 280 400 274 400 C 268 400 264 406 264 410 C 264 416 274 424 274 424 C 274 424 285 416 285 410 Z" fill="#ff7597" opacity="0.9" transform="rotate(15 274 412)"/>
+  </g>
+</svg>
